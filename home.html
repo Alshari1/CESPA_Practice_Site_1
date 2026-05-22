@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CESPA</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body class="bg-[#f5f7f6] font-[Inter] border-2">
+
+
+    <!-- ================================= -->
+    <!-- NAVBAR -->
+    <!-- ================================= -->
+
+    <nav class="absolute top-0 w-full z-50 backdrop-blur-md bg-white/5 border-b border-white/10">
+
+        <div class="px-5">
+            <div class="navbar text-white ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <a href="#" class="hover:text-green-300">Home</a>
+                            <li><a href="#" class="hover:text-green-300">About</a></li>
+                            <li><a href="#" class="hover:text-green-300">Department</a></li>
+                            <li><a href="#" class="hover:text-green-300">Events</a></li>
+                            <li><a href="#" class="hover:text-green-300">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <p>CESPA</p>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 gap-2">
+
+                        <a href="#"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3 nav-link">
+                            Home
+                            <!-- Glowing underline accent -->
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+
+                        <a href="#"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3">
+                            About
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+
+                        <a href="#"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3">
+                            Department
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+
+                        <a href="#"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3">
+                            Events
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+
+                        <a href="#"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3">
+                            Contact
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+                        <a href="./signup.html"
+                            class="relative text-white/80 font-medium tracking-wide transition-all duration-300 hover:text-green-400 group py-2 px-3">
+                            Sign Up
+                            <span
+                                class="absolute bottom-0 left-3 right-3 h-[2px] bg-green-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 shadow-[0_0_8px_#4ade80]"></span>
+                        </a>
+
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button
+                        class="border border-green/20 hover:bg-white/10 hover:text-green-400 duration-300 bg-green-400 px-5 py-2 rounded-md text-sm font-semibold">
+                        Join With Us
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- <img src="./Assets/modern-business-center.jpg" alt=""> -->
+    <!-- ================================= -->
+    <!-- HERO SECTION -->
+    <!-- ================================= -->
+
+    <section class="relative overflow-hidden min-h-screen bg-[url('./Assets/modern-business-center.jpg')] bg-cover">
+
+
+        <!-- Glow -->
+
+        <div class="absolute top-[-200px] right-[-100px] w-[600px] h-[600px] bg-green-400/10 blur-[120px] rounded-full">
+        </div>
+
+
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+
+
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-20 pt-44 pb-24">
+
+
+                <!-- LEFT CONTENT -->
+
+                <div class="w-full lg:w-[60%]">
+
+
+                    <!-- Tag -->
+                    <!-- Added 'w-fit' to the parent container -->
+                    <div
+                        class="flex items-center gap-3 w-fit px-5 py-2 rounded-full border bg-white/5 text-[11px] tracking-[2px] text-white/80 border-green-400">
+                        <!-- Glowing green dot -->
+                        <div class="h-2 w-2 rounded-full animate-bounce bg-green-400 shrink-0"></div>
+
+                        <!-- Text badge -->
+                        <span>
+                            CIVIL ENGINEERING STUDENT CLUB
+                        </span>
+                    </div>
+
+
+
+                    <!-- Heading -->
+
+                    <h1 class="text-white text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mt-8">
+
+                        Building Future
+                        <span class="text-green-400">
+                            Engineers,
+                        </span>
+
+                        Leaders
+                        <br>
+
+                        and Innovators.
+
+                    </h1>
+
+
+
+                    <!-- Paragraph -->
+
+                    <p class="text-white/70 text-base leading-8 mt-8 max-w-2xl">
+
+                        CESPA is a premier Civil Engineering student association focused on
+                        innovation, technical excellence, leadership development, and
+                        professional growth through workshops, competitions, research,
+                        and collaboration.
+
+                    </p>
+
+
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-col sm:flex-row gap-5 mt-10">
+
+                        <button
+                            class="bg-green-600 hover:bg-green-500 hover:scale-[1.03] hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] active:scale-95 transition-all duration-300 text-white px-8 py-2 rounded-md font-semibold">
+                            Explore CESPA
+                        </button>
+
+                        <!-- Secondary Button (Consistent Hover & Active State) -->
+                        <button
+                            class="border border-green-400 bg-transparent hover:bg-white/5 hover:scale-[1.03] hover:border-green-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] active:scale-95 transition-all duration-300 text-white px-8 py-2 rounded-md font-semibold">
+                            View Activities
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- RIGHT STATS -->
+
+                <div class="w-full lg:w-[260px] flex flex-row lg:flex-col gap-5 flex-wrap">
+
+
+                    <!-- Card -->
+
+                    <div class="flex-1 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7">
+
+                        <h2 class="text-4xl font-bold text-green-400">
+                            500+
+                        </h2>
+
+                        <p class="text-white/70 mt-2">
+                            Members
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="flex-1 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7">
+
+                        <h2 class="text-4xl font-bold text-green-400">
+                            8
+                        </h2>
+
+                        <p class="text-white/70 mt-2">
+                            Departments
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="flex-1 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7">
+
+                        <h2 class="text-4xl font-bold text-green-400">
+                            60+
+                        </h2>
+
+                        <p class="text-white/70 mt-2">
+                            Events Held
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="flex-1 bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-7">
+
+                        <h2 class="text-4xl font-bold text-green-400">
+                            10
+                        </h2>
+
+                        <p class="text-white/70 mt-2">
+                            Years Active
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===== WHO WE ARE ===== -->
+    <section class="max-w-7xl mx-auto px-6 py-10 lg:py-16 my-52">
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+            <!-- LEFT CARD -->
+            <div class="bg-[#0F3B2D] text-white rounded-2xl p-8 shadow-lg w-full">
+
+                <h2 class="text-3xl font-semibold mb-10 heading-font">
+                    CESPA at a Glance
+                </h2>
+
+                <!-- Item -->
+                <div class="pb-6 border-b border-white/15">
+                    <p class="text-[12px] tracking-[2px] uppercase text-[#68ffb0] font-semibold mb-3">
+                        Founded
+                    </p>
+
+                    <h3 class="text-4xl font-bold leading-none mb-2">
+                        2013
+                    </h3>
+
+                    <p class="text-[#7dffbe] text-sm">
+                        at GSTU, Bangladesh
+                    </p>
+                </div>
+
+                <!-- Item -->
+                <div class="py-6 border-b border-white/15">
+                    <p class="text-[12px] tracking-[2px] uppercase text-[#68ffb0] font-semibold mb-3">
+                        Total Members
+                    </p>
+
+                    <h3 class="text-4xl font-bold">
+                        500+
+                    </h3>
+                </div>
+
+                <!-- Item -->
+                <div class="py-6 border-b border-white/15">
+                    <p class="text-[12px] tracking-[2px] uppercase text-[#68ffb0] font-semibold mb-3">
+                        Advisors
+                    </p>
+
+                    <h3 class="text-4xl font-bold">
+                        45+
+                    </h3>
+                </div>
+
+                <!-- Item -->
+                <div class="py-6">
+                    <p class="text-[12px] tracking-[2px] uppercase text-[#68ffb0] font-semibold mb-3">
+                        Alumni Network
+                    </p>
+
+                    <h3 class="text-4xl font-bold">
+                        200+
+                    </h3>
+                </div>
+
+                <!-- Footer -->
+                <div class="mt-10 text-[#68ffb0] font-semibold text-sm tracking-wide flex flex-wrap gap-3">
+                    <span>2025</span>
+                    <span>•</span>
+                    <span>GSTU</span>
+                    <span>•</span>
+                    <span>6 Chapters</span>
+                </div>
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="lg:col-span-2">
+
+                <p class="uppercase tracking-[4px] text-sm text-[#1b5a43] font-semibold mb-4">
+                    Who We Are
+                </p>
+
+                <h1 class="heading-font text-5xl md:text-6xl leading-tight text-[#1f1f1f] mb-10">
+                    A Community Built on <br class="hidden md:block">
+                    Engineering Excellence
+                </h1>
+
+                <!-- Mission Box -->
+                <div class="border-l-4 border-[#2d6a4f] pl-6 mb-10">
+                    <h3 class="text-2xl font-semibold text-[#1f1f1f] mb-3">
+                        Our Mission
+                    </h3>
+
+                    <p class="text-gray-700 leading-8 text-lg">
+                        We empower Civil Engineering students, industry pioneers,
+                        and young alumni with opportunities to grow academically,
+                        professionally, and as responsible leaders.
+                    </p>
+                </div>
+
+                <!-- Paragraphs -->
+                <div class="space-y-8 text-gray-700 text-lg leading-9">
+
+                    <p>
+                        Founded at GSTU in 2013, CESPA has grown into one of Bangladesh's
+                        most impactful engineering student societies — producing award-winning
+                        graduates, accomplished civil servants, and trailblazing entrepreneurs
+                        across the globe.
+                    </p>
+
+                    <p>
+                        Our alumni network spans prominent positions in government, NGOs,
+                        international firms, and research institutions. With a vibrant
+                        executive committee, student members participate in national
+                        competitions, workshops, seminars, research, and community outreach
+                        year-round.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== ACTIVITIES & EVENTS ===== -->
+    <section class="activity-section py-16 md:py-24  bg-green-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-green-400 text-xs font-bold uppercase tracking-widest mb-2">What We Do</p>
+            <h2 class="text-white mb-3"
+                style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3.5vw,2.4rem);">Activities & Events
+            </h2>
+            <p class="text-green-300 text-sm mb-10 max-w-lg">From workshops to national competitions — CESPA keeps its
+                members at the forefront of engineering practice.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+                <div class="activity-card">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Seminar
+                    </span>
+                    <h3>Industry Seminars</h3>
+                    <p> Keynote sessions by engineers, architects, and policymakers sharing real-world insights and
+                        career guidance.
+                    </p>
+                    <!-- BOTTOM AREA -->
+                    <div class="mt-6 flex justify-end">
+                        <button
+                            class="rounded-lg border border-white/10 px-4 py-2 text-sm text-white transition hover:border-emerald-400 hover:bg-emerald-400 hover:text-black">
+                            Explore
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXECUTIVE COMMITTEE ===== -->
+    <section class="py-16 md:py-24 bg-white mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-green-400 text-xs font-bold uppercase tracking-widest mb-2">Leadership</p>
+            <h2 class="section-title mb-3"
+                style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3.5vw,2.4rem);">Executive Committee
+            </h2>
+            <p class="text-gray-500 text-sm mb-10 max-w-lg">Meet the student leaders driving CESPA's vision, academic,
+                and civic achievements toward its annual goals.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+                <!-- Member 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-transparent max-w-60">
+
+                    <div
+                        class="relative mb-4 h-28 w-28 overflow-hidden rounded-full border-2 border-green-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Rafin Hasan Profile"
+                            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110" />
+                    </div>
+
+                    <h3 class="text-slate-900 font-bold text-lg">
+                        Rafin Hasan
+                    </h3>
+
+                    <p class="text-teal-600 font-medium text-sm mt-0.5">
+                        President
+                    </p>
+
+                    <p class="text-slate-400 font-normal text-sm mt-0.5">
+                        4th Year, CE
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all duration-300 shadow-sm">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <!-- Member 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-transparent max-w-60">
+
+                    <div
+                        class="relative mb-4 h-28 w-28 overflow-hidden rounded-full border-2 border-green-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Rafin Hasan Profile"
+                            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110" />
+                    </div>
+
+                    <h3 class="text-slate-900 font-bold text-lg">
+                        Rafin Hasan
+                    </h3>
+
+                    <p class="text-teal-600 font-medium text-sm mt-0.5">
+                        President
+                    </p>
+
+                    <p class="text-slate-400 font-normal text-sm mt-0.5">
+                        4th Year, CE
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all duration-300 shadow-sm">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <!-- Member 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-transparent max-w-60">
+
+                    <div
+                        class="relative mb-4 h-28 w-28 overflow-hidden rounded-full border-2 border-green-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Rafin Hasan Profile"
+                            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110" />
+                    </div>
+
+                    <h3 class="text-slate-900 font-bold text-lg">
+                        Rafin Hasan
+                    </h3>
+
+                    <p class="text-teal-600 font-medium text-sm mt-0.5">
+                        President
+                    </p>
+
+                    <p class="text-slate-400 font-normal text-sm mt-0.5">
+                        4th Year, CE
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all duration-300 shadow-sm">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <!-- Member 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-transparent max-w-60">
+
+                    <div
+                        class="relative mb-4 h-28 w-28 overflow-hidden rounded-full border-2 border-green-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Rafin Hasan Profile"
+                            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110" />
+                    </div>
+
+                    <h3 class="text-slate-900 font-bold text-lg">
+                        Rafin Hasan
+                    </h3>
+
+                    <p class="text-teal-600 font-medium text-sm mt-0.5">
+                        President
+                    </p>
+
+                    <p class="text-slate-400 font-normal text-sm mt-0.5">
+                        4th Year, CE
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all duration-300 shadow-sm">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <!-- Member 1 -->
+                <div class="flex flex-col items-center text-center p-6 bg-transparent max-w-60">
+
+                    <div
+                        class="relative mb-4 h-28 w-28 overflow-hidden rounded-full border-2 border-green-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Rafin Hasan Profile"
+                            class="h-full w-full object-cover transition-transform duration-500 hover:scale-110" />
+                    </div>
+
+                    <h3 class="text-slate-900 font-bold text-lg">
+                        Rafin Hasan
+                    </h3>
+
+                    <p class="text-teal-600 font-medium text-sm mt-0.5">
+                        President
+                    </p>
+
+                    <p class="text-slate-400 font-normal text-sm mt-0.5">
+                        4th Year, CE
+                    </p>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 flex items-center justify-center h-8 w-8 rounded-full bg-green-100 text-emerald-700 hover:bg-emerald-700 hover:text-white transition-all duration-300 shadow-sm">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+    </section>
+
+
+    <!-- collage -->
+    <section class="min-h-screen py-16 md:py-24 bg-white">
+
+        <!-- HEADING -->
+        <div class="max-w-7xl mx-auto">
+            <p class="text-green-400 text-xs font-bold uppercase tracking-widest mb-2">Moments</p>
+            <h2 class=" mb-3" style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,3.5vw,2.4rem);">
+                Gallery
+            </h2>
+            <p class=" text-sm mb-10 max-w-lg">From workshops to national competitions — CESPA keeps its
+                members at the forefront of engineering practice.</p>
+        </div>
+
+
+        <!-- COLLAGE -->
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[250px] gap-5">
+
+            <!-- LARGE IMAGE -->
+            <div class="group relative overflow-hidden rounded-3xl lg:col-span-2 lg:row-span-2">
+                <img src="https://images.pexels.com/photos/5922322/pexels-photo-5922322.jpeg"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                <div class="absolute bottom-0 left-0 p-6">
+                    <span
+                        class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                        Featured
+                    </span>
+
+                    <h3 class="text-white text-2xl font-bold mt-4">
+                        Engineering Workshop
+                    </h3>
+
+                    <p class="text-gray-300 mt-2 text-sm max-w-md leading-relaxed">
+                        Hands-on civil engineering activities and technical learning sessions.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white text-lg font-semibold">
+                        Team Meeting
+                    </h3>
+                </div>
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white text-lg font-semibold">
+                        Technical Session
+                    </h3>
+                </div>
+            </div>
+
+
+            <!-- WIDE CARD -->
+            <div class="group relative overflow-hidden rounded-3xl sm:col-span-2">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/10"></div>
+
+                <div class="absolute bottom-0 left-0 p-6">
+                    <h3 class="text-white text-2xl font-bold">
+                        Student Collaboration
+                    </h3>
+
+                    <p class="text-gray-300 mt-2 text-sm">
+                        Building teamwork, leadership and innovation through collaborative engineering activities.
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white text-lg font-semibold">
+                        Presentation
+                    </h3>
+                </div>
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="group relative overflow-hidden rounded-3xl">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-110" />
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute bottom-4 left-4">
+                    <h3 class="text-white text-lg font-semibold">
+                        Innovation Lab
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== MEMBERSHIP ===== -->
+    <section class=" px-5 sm:px-8 lg:px-10 py-10 lg:py-16 bg-green-950">
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="text-white">
+
+                <p class="text-[#5CFF9D] uppercase tracking-[3px] text-sm font-semibold mb-5">
+                    Be Part Of Us
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-2xl">
+                    Become a CESPA Member
+                </h1>
+
+                <p class="text-green-100/80 text-lg leading-8 mt-6 max-w-xl">
+                    Access exclusive opportunities, build your professional network,
+                    and accelerate your civil engineering career from day one.
+                </p>
+
+                <!-- FEATURES -->
+                <div class="mt-12 space-y-8">
+
+                    <!-- ITEM -->
+                    <div class="flex gap-5 items-start">
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#5CFF9D]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6v12m6-6H6" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">
+                                Dedicated Skill Development
+                            </h3>
+
+                            <p class="text-green-100/75 leading-7">
+                                Access workshops, software training, and mentorship programs
+                                designed to sharpen your technical skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="flex gap-5 items-start">
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#5CFF9D]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5V4H2v16h5m10 0v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4m10 0H7" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">
+                                Professional Networking
+                            </h3>
+
+                            <p class="text-green-100/75 leading-7">
+                                Connect with alumni, NGOs, industry experts, and global engineering firms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="flex gap-5 items-start">
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#5CFF9D]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c0 .66.39 1.26 1 1.51.16.07.33.1.51.1H21a2 2 0 110 4h-.09c-.69 0-1.31.4-1.51 1z" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">
+                                Leadership Roles
+                            </h3>
+
+                            <p class="text-green-100/75 leading-7">
+                                Lead departments, committees, and national-level projects while building leadership
+                                experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="flex gap-5 items-start">
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#5CFF9D]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">
+                                Certificates & Recognition
+                            </h3>
+
+                            <p class="text-green-100/75 leading-7">
+                                Earn certificates through competitions, volunteering,
+                                and event participation to strengthen your CV.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="flex justify-center lg:justify-end">
+
+                <div class="w-full max-w-md bg-[#f8f8f8] rounded-[28px] shadow-2xl p-6 sm:p-8">
+
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8">
+                        Apply for Membership
+                    </h2>
+
+                    <form class="space-y-5">
+
+                        <!-- NAME -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    First Name
+                                </label>
+
+                                <input type="text" placeholder="Rafin"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Last Name
+                                </label>
+
+                                <input type="text" placeholder="Hasan"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]" />
+                            </div>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Email Address
+                            </label>
+
+                            <input type="email" placeholder="you@GSTU.ac.bd"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]" />
+                        </div>
+
+                        <!-- ID -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Student ID
+                            </label>
+
+                            <input type="text" placeholder="2103001"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]" />
+                        </div>
+
+                        <!-- YEAR -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Year of Study
+                            </label>
+
+                            <select
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]">
+                                <option>Select Year</option>
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                            </select>
+                        </div>
+
+                        <!-- DEPARTMENT -->
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">
+                                Department
+                            </label>
+
+                            <select
+                                class="w-full px-4 py-3 rounded-xl border border-gray-300 bg-white outline-none focus:ring-2 focus:ring-[#0b3b2d]">
+                                <option>Select Department</option>
+                                <option>CE</option>
+                                <option>CSE</option>
+                                <option>EEE</option>
+                                <option>ME</option>
+                            </select>
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button type="submit"
+                            class="w-full bg-[#0b3b2d] hover:bg-[#07271d] text-white font-semibold py-4 rounded-xl transition duration-300">
+                            Submit Application →
+                        </button>
+
+                    </form>
+
+                    <p class="text-center text-sm text-gray-400 mt-5">
+                        Free to join · Open to all GSTU CE students
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== BLOG & NEWS ===== -->
+    <section class="py-16 md:py-24 bg-white" id="blog">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="section-label">Stay Updated</p>
+            <h2 class="section-title mb-3">Blog & News</h2>
+            <p class="text-gray-500 text-sm mb-10 max-w-lg">Engineering insights, updates, conference announcements, and
+                recently released publications from CESPA.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Blog 2 -->
+                <div class="card blog-card bg-base-100 w-96 shadow-sm ">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="border p-3">
+                        <span
+                            class="inline-block w-fit rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                            Achievement
+                        </span>
+                        <p class="text-xs text-gray-400 mt-2 mb-1">Mar 12, 2025 · 3 min read</p>
+                        <h3 class="font-semibold text-gray-800 text-sm leading-snug mb-2">CESPA Wins Gold at National
+                            Concrete Olympiad 2025</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-3">Our team secured first place in the
+                            structural challenge category at this year's national concrete mix competition held in
+                            Dhaka.</p>
+                        <a href="#" class="text-green-700 text-xs font-semibold hover:underline">Read More →</a>
+                    </div>
+                </div>
+                <div class="card blog-card bg-base-100 w-96 shadow-sm ">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="border p-3">
+                        <span
+                            class="inline-block w-fit rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                            Achievement
+                        </span>
+                        <p class="text-xs text-gray-400 mt-2 mb-1">Mar 12, 2025 · 3 min read</p>
+                        <h3 class="font-semibold text-gray-800 text-sm leading-snug mb-2">CESPA Wins Gold at National
+                            Concrete Olympiad 2025</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-3">Our team secured first place in the
+                            structural challenge category at this year's national concrete mix competition held in
+                            Dhaka.</p>
+                        <a href="#" class="text-green-700 text-xs font-semibold hover:underline">Read More →</a>
+                    </div>
+                </div>
+                <div class="card blog-card bg-base-100 w-96 shadow-sm ">
+                    <figure>
+                        <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                            alt="Shoes" />
+                    </figure>
+                    <div class="border p-3">
+                        <span
+                            class="inline-block w-fit rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
+                            Achievement
+                        </span>
+                        <p class="text-xs text-gray-400 mt-2 mb-1">Mar 12, 2025 · 3 min read</p>
+                        <h3 class="font-semibold text-gray-800 text-sm leading-snug mb-2">CESPA Wins Gold at National
+                            Concrete Olympiad 2025</h3>
+                        <p class="text-gray-500 text-xs leading-relaxed mb-3">Our team secured first place in the
+                            structural challenge category at this year's national concrete mix competition held in
+                            Dhaka.</p>
+                        <a href="#" class="text-green-700 text-xs font-semibold hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION -->
+    <section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 lg:py-20">
+
+        <!-- GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+
+            <!-- LEFT SIDE -->
+            <div>
+
+                <!-- TOP TEXT -->
+                <p class="uppercase tracking-[4px] text-sm font-semibold text-[#2c6a4f] mb-4">
+                    Get In Touch
+                </p>
+
+                <h1 class="heading-font text-5xl sm:text-6xl font-semibold text-[#0f2f22] leading-none mb-14">
+                    Contact CESPA
+                </h1>
+
+                <!-- CONTACT ITEMS -->
+                <div class="space-y-10">
+
+                    <!-- ADDRESS -->
+                    <div class="flex items-start gap-5">
+
+                        <div class="w-14 h-14 rounded-full bg-[#d7f0df] flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#17834a]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg text-[#102f23] mb-2">
+                                Address
+                            </h3>
+
+                            <p class="text-[#4f5f58] leading-8">
+                                Department of Civil Engineering,<br>
+                                Khulna University of Engineering & Technology,<br>
+                                Khulna-9203, Bangladesh
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="flex items-start gap-5">
+
+                        <div class="w-14 h-14 rounded-full bg-[#d7f0df] flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#17834a]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 12H8m8 0l-8 0m8 0v8m0-8V4" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg text-[#102f23] mb-2">
+                                Email
+                            </h3>
+
+                            <p class="text-[#4f5f58]">
+                                cespa@GSTU.ac.bd
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="flex items-start gap-5">
+
+                        <div class="w-14 h-14 rounded-full bg-[#d7f0df] flex items-center justify-center shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#17834a]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.129a11.042 11.042 0 005.516 5.516l1.129-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold text-lg text-[#102f23] mb-2">
+                                Phone
+                            </h3>
+
+                            <p class="text-[#4f5f58]">
+                                +880-41-774780
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="flex items-center gap-4 mt-12">
+
+                    <!-- FACEBOOK -->
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-[#173d2d] hover:scale-105 transition duration-300 flex items-center justify-center text-white">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                            <path
+                                d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.5-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.89h-2.32v6.99A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+
+                    <!-- LINKEDIN -->
+                    <a href="#"
+                        class="w-14 h-14 rounded-full bg-[#173d2d] hover:scale-105 transition duration-300 flex items-center justify-center text-white">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.3c0-1.74-.03-3.98-2.42-3.98-2.43 0-2.8 1.9-2.8 3.85V24h-5V8z" />
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div>
+
+                <div class="bg-white border border-[#e7e2d9] rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm">
+
+                    <h2 class="heading-font text-4xl font-semibold text-[#0f2f22] mb-8">
+                        Send a Message
+                    </h2>
+
+                    <form class="space-y-6">
+
+                        <!-- NAME + EMAIL -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-[#173d2d]">
+                                    Name
+                                </label>
+
+                                <input type="text" placeholder="Your name"
+                                    class="w-full px-5 py-4 rounded-2xl border border-[#d8d8d8] bg-[#fafafa] outline-none focus:ring-2 focus:ring-[#173d2d]" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold mb-2 text-[#173d2d]">
+                                    Email
+                                </label>
+
+                                <input type="email" placeholder="you@example.com"
+                                    class="w-full px-5 py-4 rounded-2xl border border-[#d8d8d8] bg-[#fafafa] outline-none focus:ring-2 focus:ring-[#173d2d]" />
+                            </div>
+
+                        </div>
+
+                        <!-- SUBJECT -->
+                        <div>
+
+                            <label class="block text-sm font-semibold mb-2 text-[#173d2d]">
+                                Subject
+                            </label>
+
+                            <input type="text" placeholder="How can we help?"
+                                class="w-full px-5 py-4 rounded-2xl border border-[#d8d8d8] bg-[#fafafa] outline-none focus:ring-2 focus:ring-[#173d2d]" />
+                        </div>
+
+                        <!-- MESSAGE -->
+                        <div>
+
+                            <label class="block text-sm font-semibold mb-2 text-[#173d2d]">
+                                Message
+                            </label>
+
+                            <textarea rows="6" placeholder="Your message..."
+                                class="w-full px-5 py-4 rounded-2xl border border-[#d8d8d8] bg-[#fafafa] outline-none resize-none focus:ring-2 focus:ring-[#173d2d]"></textarea>
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button type="submit"
+                            class="w-full bg-[#173d2d] hover:bg-[#0e281d] text-white py-4 rounded-2xl font-semibold text-lg transition duration-300">
+
+                            Send Message →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+        <aside class="grid-flow-col items-center">
+            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                    </path>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                    </path>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                    <path
+                        d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                    </path>
+                </svg>
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

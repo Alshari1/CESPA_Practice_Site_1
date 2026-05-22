@@ -1,0 +1,121 @@
+@import "tailwindcss" ;
+
+
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent !important;
+}
+
+.activity-card{
+    position: relative;
+    overflow: hidden;
+
+    padding: 28px;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    transition: all 0.35s ease;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.15);
+
+    cursor: pointer;
+    color:red;
+}
+
+/* Hover Effect */
+.activity-card:hover{
+    transform: translateY(-8px);
+
+    border-color: rgba(52, 211, 153, 0.35);
+
+    background: rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 20px 40px rgba(16, 185, 129, 0.12),
+        0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Gradient Glow */
+.activity-card::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(52,211,153,0.08),
+            transparent 60%
+        );
+
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.activity-card:hover::before{
+    opacity: 1;
+}
+
+/* Badge */
+.activity-card span{
+    display: inline-block;
+
+
+    background: rgba(52,211,153,0.12);
+
+    border: 1px solid rgba(52,211,153,0.2);
+
+    color: #6ee7b7;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Title */
+.activity-card h3{
+    margin-top: 22px;
+    margin-bottom: 14px;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: color 0.3s ease;
+}
+
+.activity-card:hover h3{
+    color: #6ee7b7;
+}
+
+/* Description */
+.activity-card p{
+    color: #d1d5db;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    .activity-card{
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .activity-card h3{
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sora: ['Sora', 'sans-serif'] },
+          colors: {
+            teal: {
+              50:  '#E1F5EE',
+              100: '#9FE1CB',
+              200: '#5DCAA5',
+              500: '#1D9E75',
+              700: '#0F6E56',
+              900: '#04342C',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Sora', sans-serif; }
+    input:focus, select:focus {
+      outline: none;
+      border-color: #1D9E75 !important;
+      box-shadow: 0 0 0 3px rgba(29,158,117,0.18);
+    }
+    .submit-btn { transition: background .15s, transform .12s, box-shadow .15s; }
+    .submit-btn:hover:not(:disabled) {
+      background-color: #1D9E75;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(15,110,86,0.28);
+    }
+    .submit-btn:active:not(:disabled) { transform: scale(0.98); box-shadow: none; }
+    .social-btn { transition: background .15s, border-color .15s, transform .12s; }
+    .social-btn:hover { transform: translateY(-1px); }
+    .social-btn:active { transform: scale(0.98); }
+    .strength-bar { transition: background 0.3s; }
+    .fade-up { animation: fadeUp 0.45s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.10s; }
+    .delay-3 { animation-delay: 0.15s; }
+    .delay-4 { animation-delay: 0.20s; }
+    .delay-5 { animation-delay: 0.25s; }
+    .delay-6 { animation-delay: 0.30s; }
+    .delay-7 { animation-delay: 0.35s; }
+    .delay-8 { animation-delay: 0.40s; }
+    .delay-9 { animation-delay: 0.45s; }
+  </style>
+</head>
+<body class="min-h-screen bg-teal-900 flex items-center justify-center px-4 py-10"
+  style="background-image: radial-gradient(ellipse at 20% 50%, rgba(29,158,117,0.10) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(15,110,86,0.08) 0%, transparent 50%);">
+
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8 sm:p-10">
+
+  
+
+    <!-- Heading -->
+    <div class="fade-up delay-2 mb-7">
+      <h1 class="text-3xl font-semibold text-gray-900 leading-tight text-center">Register Please!!</h1>
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="fade-up delay-3 mb-5">
+      <button type="button" id="googleBtn"
+        class="social-btn flex items-center justify-center gap-2 h-11 border border-gray-200 rounded-xl bg-gray-50 text-gray-700 text-sm font-medium hover:bg-white hover:border-gray-300 w-full">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        Google
+      </button>
+      
+    </div>
+
+    <!-- Divider -->
+    <div class="fade-up delay-4 flex items-center gap-3 my-5">
+      <div class="flex-1 h-px bg-gray-100"></div>
+      <span class="text-xs text-gray-400">or sign up with email</span>
+      <div class="flex-1 h-px bg-gray-100"></div>
+    </div>
+
+    <!-- Name Row -->
+    <div class="fade-up delay-4 mb-4">
+      <div>
+        <label class="block text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5">User name</label>
+        <div class="relative">
+          <i class="ti ti-user absolute left-3 top-1/2 -translate-y-1/2 text-gray-300 text-base pointer-events-none"></i>
+          <input id="userName" type="text" placeholder="Rafin" autocomplete="given-name"
+            class="w-full h-11 pl-9 pr-3 border border-gray-200 rounded-xl bg-gray-50 text-sm text-gray-800 placeholder-gray-300 focus:bg-white"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="fade-up delay-5 mb-4">
+      <label class="block text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5">Email address</label>
+      <div class="relative">
+        <i class="ti ti-mail absolute left-3 top-1/2 -translate-y-1/2 text-gray-300 text-base pointer-events-none"></i>
+        <input id="email" type="email" placeholder="you@example.com" autocomplete="email"
+          class="w-full h-11 pl-9 pr-3 border border-gray-200 rounded-xl bg-gray-50 text-sm text-gray-800 placeholder-gray-300 focus:bg-white"/>
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="fade-up delay-6 mb-4">
+      <label class="block text-xs font-medium text-gray-500 uppercase tracking-wide mb-1.5">Password</label>
+      <div class="relative">
+        <i class="ti ti-lock absolute left-3 top-1/2 -translate-y-1/2 text-gray-300 text-base pointer-events-none"></i>
+        <input id="password" type="password" placeholder="Min. 8 characters" autocomplete="new-password"
+          class="w-full h-11 pl-9 pr-11 border border-gray-200 rounded-xl bg-gray-50 text-sm text-gray-800 placeholder-gray-300 focus:bg-white"/>
+        <button type="button" onclick="togglePass()"
+          class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-300 hover:text-gray-500 transition-colors">
+          <i class="ti ti-eye text-base" id="eye-icon"></i>
+        </button>
+      </div>
+      <div class="flex gap-1.5 mt-2">
+        <div class="strength-bar flex-1 h-1 rounded-full bg-gray-100" id="bar1"></div>
+        <div class="strength-bar flex-1 h-1 rounded-full bg-gray-100" id="bar2"></div>
+        <div class="strength-bar flex-1 h-1 rounded-full bg-gray-100" id="bar3"></div>
+        <div class="strength-bar flex-1 h-1 rounded-full bg-gray-100" id="bar4"></div>
+      </div>
+      <p class="text-xs mt-1 h-4" id="strength-label"></p>
+    </div>
+
+    <!-- Terms -->
+    <div class="fade-up delay-7 flex items-start gap-2.5 mt-4">
+      <input type="checkbox" id="terms-check" class="mt-0.5 cursor-pointer accent-teal-700"/>
+      <label for="terms-check" class="text-xs text-gray-400 cursor-pointer leading-relaxed">
+        I agree to the <a href="#" class="text-teal-700 font-medium hover:underline">Terms of Service</a>
+        and <a href="#" class="text-teal-700 font-medium hover:underline">Privacy Policy</a>
+      </label>
+    </div>
+
+    <!-- Submit -->
+    <div class="fade-up delay-8 mt-5">
+      <button type="button" id="signup"
+        class="submit-btn w-full h-12 bg-teal-700 text-white rounded-xl text-sm font-semibold flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
+        <span id="btn-text">Create account</span>
+        <i class="ti ti-arrow-right text-base" id="btn-icon"></i>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <p class="fade-up delay-9 text-center text-sm text-gray-400 mt-5">
+      Already have an account?
+      <a href="login.html" class="text-teal-700 font-medium hover:underline">Sign in</a>
+    </p>
+
+  </div>
+  <script type="module" src="./signup.js"></script>
+
+</body>
+</html>
