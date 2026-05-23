@@ -4,13 +4,13 @@ fetch('./info.json')
 
         const cardsContainer =
             document.querySelector(".card-container"); // FIX
-            
+
 
         data.forEach(activity => {
             console.log(activity)
 
             cardsContainer.innerHTML += `
-        <div class="activity-card">
+        <div class="activity-card" data-id="${activity.id}">
                 <span
                     class="inline-block rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">
                     Seminar
@@ -36,4 +36,15 @@ fetch('./info.json')
         console.log(err.message);
     });
 
-  
+document.querySelector('.card-container').addEventListener('click', (e) => {
+
+  const card = e.target.closest('.activity-card');
+  if (!card) return;
+
+  const id = card.dataset.id;
+
+  localStorage.setItem('activity_id', id);
+
+  window.location.href = "details.html";
+
+});
